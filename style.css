@@ -1,7 +1,7 @@
 * {
-    background-color: plum;
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
@@ -54,10 +54,12 @@ span {
 }
 
 .play-button {
+    background: rgba(115, 124, 132, 0.04);
+    backdrop-filter: blur(56px);
+    border-radius: 50%;
     position: absolute;
     left: 44%;
     top: 32%;
-    border-radius: 50%;
 }
 
 /* MAIN CONTENT */
@@ -67,6 +69,8 @@ span {
     align-items: center;
     /* justify-content: space-between; */
     margin: 0 100px;
+    margin-bottom: 90px;
+    width: 80%;
 }
 
 .main-text {
@@ -83,5 +87,206 @@ span {
 /* GRID */
 .grid-container {
     display: grid;
-    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 0 150px;
+    row-gap: 100px;
+    margin-bottom: 7%;
+}
+
+.grid-sif {
+    padding-top: 23%;
+}
+
+.grid-text {
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* 'SEE ALL PROECT' TEXT */
+.product-text {
+    margin-bottom: 20%;
+}
+
+.product-line {
+    text-align: center;
+    color: black;
+    font-family: 'poppins';
+    font-size: 18px;
+    font-weight: 400 ;
+    text-decoration: underline;
+    text-decoration-color: violet;
+}
+
+/* MAP SECTION */
+.client-container {
+    background-image: url(images/map.png);
+    /* position: absolute; */
+    background-repeat: no-repeat;
+    height: 800px;
+    /* left: 520px; */
+    width: 100%;
+    background-position: right;
+    margin-bottom: 30px;
+}
+
+.client-text {
+    padding-top: 200px;
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 50px;
+    padding-left: 60px;
+}
+
+.client-logos {
+    display: flex;
+    /* gap: 20px; */
+    /* height: 100%; */
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* VIEW CLIENTS' TEXT */
+.client-line {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px;
+    /* background-color: blue; */
+    visibility: visible;
+}
+
+/* TESTIMONIAL SECTION */
+.testimonial-section {
+  position: relative;
+}
+.testimonial-headline {
+    font-family: 'poppins';
+    font-size: 52px;
+    font-weight: 400;
+    padding-left: 145px;
+    padding-right: 200px;
+    margin-bottom: 30px;
+}
+
+.double-quote {
+    position: absolute;
+    left: 50px;  
+    top: -75px;
+    z-index: -1;
+}
+
+.testimonial-container {
+    display: flex;
+    gap: 100px;
+    padding: 20px 150px;
+    line-height: 1.6;
+}
+
+.testimonials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.testimonial-img {
+    border-radius: 50%;
+}
+
+/* ARROW MARK */
+.arrow-mark {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 150px;
+}
+
+/* BLOGS */
+.blogs {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.see-more {
+    display: block;
+    text-align: center;
+}
+.blog-flex {
+    display: flex;
+}
+
+
+/* PICTURE GRID */
+.picture-container {
+    display: flex;
+    margin-right: 1.5%;
+    gap: 0.5%;
+    margin-bottom: 20px;
+}
+
+.first-grid-pic {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+/* img {max-width:100%;} */
+.instagram {
+    font-family: 'poppins';
+    transform: rotate(90deg);
+    text-align: center;
+    padding-top: 45%;
+}
+
+.grid-bottom-img {
+    align-self: end;
+}
+
+/* FOOTER */
+.footer-logo {
+    background: transparent;
+    /* display: block; */
+}
+
+form {
+    display:flex;
+    flex-direction:row;
+    border: 5px red;
+}
+
+.footer-container {
+    display: flex;
+    background-color: rgb(36, 35, 35);
+    justify-content: center;
+    gap: 20%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* height: 500px; */
+}
+
+.footer-links {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* row-gap: 10%; */
+    /* justify-items: center; */
+}
+.search-bar {
+    margin-top: 30px;
+    border-radius: 9px;
+    padding: 10px;
+    /* height: 25px; */
+}
+
+.submit-arrow {
+    border:1px solid rgb(111, 13, 156);
+    border-radius: 50%;
+    background: rgb(111, 13, 156);
+    color:white;
+    margin-left: -17px;
 }
