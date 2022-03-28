@@ -120,6 +120,11 @@ span {
     margin-bottom: 7%;
 }
 
+.animated-img:hover {
+    transform: translateY(-0.2rem);
+}
+
+
 .grid-sif {
     padding-top: 23%;
 }
