@@ -46,16 +46,24 @@
             and elaborate online business services.
         </p>
 
-        <ul class="main-dropdown">
-            <li>UI UX Design <ion-icon class="down-arrow" name="chevron-down-outline"></ion-icon>
-            </li>
-            <li>Web & App Development<ion-icon class="down-arrow" name="chevron-down-outline"></ion-icon>
-            </li>
-            <li>Branding and Communication<ion-icon class="down-arrow" name="chevron-down-outline"></ion-icon>
-            </li>
-            <li>Digital & Social Media Marketing<ion-icon class="down-arrow" name="chevron-down-outline"></ion-icon>
-            </li>
-        </ul>
+        <div class="main-dropdown">
+            <div class="dropdown-flex">
+                <p>UI UX Design</p> 
+                <ion-icon class="down-arrow" name="chevron-down-outline"></ion-icon>
+            </div>
+            <div class="dropdown-flex">
+                <p>Web & App Development</p> 
+                <ion-icon class="down-arrow" name="chevron-down-outline"></ion-icon>
+            </div>
+            <div class="dropdown-flex">
+                <p>Branding and Communication</p> 
+                <ion-icon class="down-arrow" name="chevron-down-outline"></ion-icon>
+            </div>
+            <div class="dropdown-flex">
+                <p>Digital & Social Media Marketing</p> 
+                <ion-icon class="down-arrow" name="chevron-down-outline"></ion-icon>
+            </div>
+        </div>
     </div>
 
     <!-- GRID-->
@@ -109,7 +117,7 @@
             <img src="images/truefan_logo.svg" alt="truefan logo">
             <img src="images/gamma_logo.svg" alt="gamma logo">
         </div>
-
+        <!-- VIEW CLIENTS line -->
         <a class="client-line" href="#">View Clients</a>
 
     </div>
@@ -153,28 +161,26 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- ARROW MARK -->
-    <div class="arrow-mark">
-        <!-- <a class="arrow-link" href="#"> -->
-        <img class="left-arrow" src="images/left_arrow.svg" alt="left arrow">
-        <!-- </a> -->
-        <!-- <a class="arrow-link" href="#"> -->
-        <img class="right-arrow" src="images/right_arrow.svg" alt="right arrow">
-        <!-- </a>  -->
+        <!-- ARROW MARK -->
+        <div class="arrow-mark">
+            <img class="left-arrow" src="images/left_arrow.svg" alt="left arrow">
+
+            <img class="right-arrow" src="images/right_arrow.svg" alt="right arrow">
+        </div>
+
     </div>
 
 
     <!-- BLOGS AND STORIES -->
     <div class="blogs">
-        <p>Blogs and stories</p>
+        <p class="blogs-stories">Blogs and stories</p>
         <div class="blog-flex">
             <div class="design">
                 <div class="design-content">
                     <img src="images/notebook.png" alt="notebook">
                     <div class="design-text">
                         <h3>FREE design courses to make you successful in 2020</h3>
-                        <p>September 12, 2020</p>
+                        <p class="design-date">September 12, 2020</p>
                     </div>
                 </div>
 
@@ -186,20 +192,21 @@
             <div class="design">
                 <div class="design-content">
                     <img src="images/office_setup.png" alt="office">
-                    <div class="design-text">
-                        <h3>Design Thinking-5 easy ways to make you a Pro</h3>
-                        <p>September 12, 2020</p>
+                <!-- <div class="design-bloghead"> -->
+                    <div class="design-text design-text-margin">
+                        <h3 class="blog-heading">Design Thinking-5 easy ways to make you a Pro</h3>
+                        <p class="design-date">September 12, 2020</p>
                     </div>
                 </div>
-
-                <div class="design-text">
-                    <h3>FREE design courses to make you successful in 2020</h3>
-                    <p>September 12, 2020</p>
+            
+                <div class="design-text design-text-margin">
+                    <h3 class="blog-heading">FREE design courses to make you successful in 2020</h3>
+                    <p class="design-date">September 12, 2020</p>
                 </div>
 
                 <div class="design-text">
-                    <h3>Simple definition of design according to best designers</h3>
-                    <p>September 12, 2020</p>
+                    <h3 class="blog-heading">Simple definition of design according to best designers</h3>
+                    <p class="design-date">September 12, 2020</p>
                 </div>
             </div>
         </div>
@@ -225,36 +232,40 @@
         </div>
 
         <img src="images/standing_plants.png" alt="">
-
     </div>
 
 
     <!-- FOOTER SECTION -->
-    <footer class="footer-container">
-        <div class="footer-container-section">
-            <img class="footer-logo" src="images/logo.svg" alt="footer logo">
-            <div class="footer-links">
-                <a href="#">Client</a>
-                <a href="#">Work</a>
-                <a href="#">About</a>
-                <a href="#">Dribble</a>
-                <a href="#">Behance</a>
-                <a href="#">Instagram</a>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-container-section">
+                <img class="footer-logo" src="images/logo.svg" alt="footer logo">
+                <div class="footer-links">
+                    <a class="footer-link" href="#">Client</a>
+                    <a class="footer-link" href="#">Dribble</a>
+                    <a class="footer-link" href="#">Work</a>
+                    <a class="footer-link" href="#">Behance</a>
+                    <a class="footer-link" href="#">About</a>
+                    <a class="footer-link" href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-container-section">
+                <p class="need-help">Need help</p>
+                <p class="lets-talk">Let’s talk</p>
+
+                <div class="search">
+                    <form>
+                        <input class="search-bar" type="email" placeholder="Enter your email..." name="search">
+                        <button class="submit-arrow">&rarr;</button>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="footer-container-section">
-            <p class="need-help">Need help</p>
-            <p class="lets-talk">Let’s talk</p>
-
-            <div class="search">
-                <form>
-                    <input class="search-bar" type="email" placeholder="Enter your email..." name="search">
-                    <button class="submit-arrow">&rarr;</button>
-                </form>
-            </div>
+        <div class="copyright">
+            <hr>
+            <p class="copyright-text">All Copyrights Reserved <span class="copyright-span">Pen On Paper</span> LLP 2020</p>
         </div>
     </footer>
-
 
     <!-- IONICONS PACK -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
